@@ -2,9 +2,9 @@ const logger = require('../utils/logger');
 
 module.exports = async (ctx) => {
     const body = ctx.request.body;
-
+    console.log(body)
     const dan = new ctx.mongodb({
-        player: body.id,
+        player: body.player,
         author: body.author,
         time: body.time,
         text: body.text,
